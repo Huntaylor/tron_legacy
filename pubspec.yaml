@@ -1,0 +1,33 @@
+name: tron_legacy
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  bloc: ^8.1.4
+  copy_with_extension: ^5.0.4
+  flame: ^1.17.0
+  flame_behavior_tree: ^0.1.1
+  flame_bloc: ^1.11.1
+  flame_sprite_fusion: ^0.1.1
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  very_good_analysis: ^5.1.0
+  flutter_gen_runner: ^5.4.0
+  autoequal_gen: ^0.9.1
+  build_runner: ^2.4.10
+  copy_with_extension_gen: ^5.0.4
+
+scripts: derry.yaml
+
+flutter:
+  uses-material-design: true
