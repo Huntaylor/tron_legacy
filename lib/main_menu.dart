@@ -1,4 +1,5 @@
 import 'package:tron_legacy/utils/app_library.dart';
+import 'package:tron_legacy/utils/routes/route_paths.dart';
 
 class MainMenu extends StatelessWidget {
   const MainMenu({super.key});
@@ -30,18 +31,20 @@ class MainMenu extends StatelessWidget {
                 const SizedBox(
                   height: 8,
                 ),
+                // ElevatedButton.icon(
+                //   iconAlignment: IconAlignment.end,
+                //   onPressed: () {},
+                //   label: const Text('Two Player'),
+                //   icon: const Icon(Icons.play_arrow),
+                // ),
+                // const SizedBox(
+                //   height: 8,
+                // ),
                 ElevatedButton.icon(
                   iconAlignment: IconAlignment.end,
-                  onPressed: () {},
-                  label: const Text('Two Player'),
-                  icon: const Icon(Icons.play_arrow),
-                ),
-                const SizedBox(
-                  height: 8,
-                ),
-                ElevatedButton.icon(
-                  iconAlignment: IconAlignment.end,
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push(Paths.mainMenu.settings.path);
+                  },
                   label: const Text('Settings'),
                   icon: const Icon(Icons.settings),
                 )
