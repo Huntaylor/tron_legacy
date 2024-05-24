@@ -18,14 +18,14 @@ class TronLegacyGame extends FlameGame with HasKeyboardHandlerComponents {
 
   @override
   FutureOr<void> onLoad() async {
-    level = Level();
+    await images.loadAllImages();
+
+    level = Level(player: player);
     camera = CameraComponent.withFixedResolution(
       width: 520,
       height: 360,
       world: level,
     );
-
-    player.position = Vector2(5, 5);
 
     camera.follow(player);
 
@@ -33,7 +33,6 @@ class TronLegacyGame extends FlameGame with HasKeyboardHandlerComponents {
       [
         camera,
         level,
-        player,
       ],
     );
     return super.onLoad();

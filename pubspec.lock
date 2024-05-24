@@ -56,14 +56,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.9.1"
-  behavior_tree:
-    dependency: transitive
-    description:
-      name: behavior_tree
-      sha256: "7e6648e80f0c5a8868fb958f8dbbd49e559bf32c2c6a219102df06c4ccb861f3"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.1"
   bloc:
     dependency: "direct main"
     description:
@@ -280,14 +272,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
-  flame_behavior_tree:
+  flame_behaviors:
     dependency: "direct main"
     description:
-      name: flame_behavior_tree
-      sha256: "852f827c3a6d2e381cfbbcfdb84c87dbc51ba55b25503bb80200ab8f5c4de05b"
+      name: flame_behaviors
+      sha256: "177aa671df88ecdaf01c28e8f6fbdb83a69ce923dc7c1b551cfc1b34df0386c7"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.1"
+    version: "1.1.0"
   flame_bloc:
     dependency: "direct main"
     description:
@@ -480,7 +472,7 @@ packages:
     source: hosted
     version: "4.0.0"
   logging:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: logging
       sha256: "623a88c9594aa774443aa3eb2d41807a48486b5613e67599fb4c41c0ad47c340"
