@@ -1,4 +1,5 @@
 import 'package:tron_legacy/utils/app_library.dart';
+import 'package:tron_legacy/utils/routes/route_paths.dart';
 
 class Settings extends StatelessWidget {
   const Settings({super.key});
@@ -28,6 +29,14 @@ class Settings extends StatelessWidget {
                 const SizedBox(
                   height: 8,
                 ),
+                ElevatedButton.icon(
+                  iconAlignment: IconAlignment.end,
+                  onPressed: () {
+                    context.push(Paths.mainMenu.path);
+                  },
+                  label: const Text('Back to Menu'),
+                  icon: const Icon(Icons.settings),
+                )
               ],
             ),
           ),

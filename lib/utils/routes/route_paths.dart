@@ -14,4 +14,8 @@ class MainMenuPath extends Path {
         'settings',
         parent: this,
       );
+  Path get gameView => Path(
+        'gameView',
+        parent: this,
+      );
 }

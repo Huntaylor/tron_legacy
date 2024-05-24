@@ -24,7 +24,9 @@ class MainMenu extends StatelessWidget {
                 ),
                 ElevatedButton.icon(
                   iconAlignment: IconAlignment.end,
-                  onPressed: () {},
+                  onPressed: () {
+                    context.push(Paths.mainMenu.gameView.path);
+                  },
                   label: const Text('Single Player'),
                   icon: const Icon(Icons.play_arrow),
                 ),
